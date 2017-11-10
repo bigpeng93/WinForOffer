@@ -3,6 +3,7 @@ package problem3;
 public class FindArrayRepeat2 {
     public int findrepeat(int num[],int length){
         if (num == null || length==0){
+
             return -1;
         }
         int start = 1;
