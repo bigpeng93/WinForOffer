@@ -8,6 +8,7 @@ public class FindArrayRepeat2 {
         }
         int start = 1;
         int end = length-1;
+
         while (end >= start){
             int middle = ((end-start)>>1)+start;
             int count = countRange(num,length,start,middle);
