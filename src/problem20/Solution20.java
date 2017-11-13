@@ -19,13 +19,13 @@ public class Solution20 {
         return numeric;
 
     }
-    public boolean scanInteger(char[] str){
+    private boolean scanInteger(char[] str){
         if(strindex<str.length && (str[strindex] == '+' || str[strindex]=='-')){
             strindex++;
         }
         return scanUndsignedInteger(str);
     }
-    public boolean scanUndsignedInteger(char[] str){
+    private boolean scanUndsignedInteger(char[] str){
         int before = 0;
         while (strindex<str.length && str[strindex] >= '0' && str[strindex]<='9'){
             before++;
