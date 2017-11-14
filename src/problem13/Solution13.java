@@ -30,7 +30,7 @@ public class Solution13 {
         return false;
     }
 
-    private int getDig(int numble){
+    public int getDig(int numble){
         int sum = 0;
         while (numble>0){
             sum += numble%10;
