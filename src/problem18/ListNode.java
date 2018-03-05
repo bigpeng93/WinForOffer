@@ -1,6 +1,10 @@
 package problem18;
 
 public class ListNode {
-    int value;
-    ListNode Next;
+    int val;
+    ListNode next = null;
+
+    ListNode(int val) {
+        this.val = val;
+    }
 }

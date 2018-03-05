@@ -1,7 +1,7 @@
 package problem55;
 
 public class TreeNode {
-    int val = 0;
+    public int val;
     TreeNode left = null;
     TreeNode right = null;
 

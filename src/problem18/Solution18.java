@@ -5,19 +5,19 @@ public class Solution18 {
         if(head == null || tobeDelete ==null){
             return;
         }
-        if(tobeDelete.Next!=null){
-            tobeDelete.value = tobeDelete.Next.value;
-            tobeDelete.Next = tobeDelete.Next.Next;
-        }else if(head.Next == null){
+        if(tobeDelete.next!=null){
+            tobeDelete.val = tobeDelete.next.val;
+            tobeDelete.next = tobeDelete.next.next;
+        }else if(head.next == null){
             head =null;
         }else {
-            ListNode temp = head.Next;
+            ListNode temp = head.next;
             while (temp !=null){
-                if(temp.Next == tobeDelete){
-                    temp.Next = tobeDelete.Next.Next;
+                if(temp.next == tobeDelete){
+                    temp.next = tobeDelete.next.next;
                     break;
                 }
-                temp = temp.Next;
+                temp = temp.next;
             }
         }
     }
